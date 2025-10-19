@@ -10,8 +10,17 @@
 
 // NOTE! - You will want to fill out this data structure.  Do you want a separate
 // NODE data structure as well?
+typedef struct _Node{
+    long long key;
+    void *satellite;
+    struct _Node *left;
+    struct _Node *right;
+
+}Node;
 typedef struct _BST
 {
+    Node * root;
+
 } BST;
 
 typedef void (*NODEVISITFUNC)(void * parm);
